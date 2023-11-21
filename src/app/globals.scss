@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,6 +17,7 @@
   --black06: #060606;
   --gray75: #757d8a;
   --gray10: #eff2f7;
+  --grayE7: #e7e7e8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,6 +34,7 @@
     --black06: #060606;
     --gray75: #757d8a;
     --gray10: #eff2f7;
+    --grayE7: #e7e7e8;
   }
 }
 
@@ -42,4 +46,16 @@ html,
 body {
   height: 100%;
   width: 100%;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+p,
+h3,
+h3,
+h4,
+span,
+button {
+  font-family: "Satoshi", sans-serif !important;
 }

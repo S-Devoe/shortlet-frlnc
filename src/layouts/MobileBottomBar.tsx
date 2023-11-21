@@ -11,14 +11,14 @@ import React from "react";
 const MobileBottomBar = () => {
   const pathname = usePathname();
   return (
-    <nav className="fixed bottom-0 w-full h-[5.25rem] px-8 py-3 flex items-center justify-between gap-5">
+    <nav className="md:hidden fixed bg-white bottom-0 w-full h-[4rem] px-8 py-3 border-t border-t-gray10 flex items-center justify-between gap-5">
       {navLinks.map((link, i) => (
         <Link
           href={link.route}
           key={`link-${i + 1}`}
           className={` ${
             pathname.includes(link.route) ? "text-orange" : "text-gray6"
-          }  border-t border-t-gray10`}
+          }  `}
         >
           {link.icon}
         </Link>
@@ -39,7 +39,7 @@ const navLinks = [
     icon: <HeartIcon />,
   },
   {
-    route: "/location",
+    route: "/bookings",
     icon: <LocationIcon />,
   },
   {

@@ -25,6 +25,7 @@ const config: Config = {
         black06: "var(--black06)",
         gray75: "var(--gray75)",
         gray10: "var(--gray10)",
+        grayE7: "var(--grayE7)",
       },
     },
   },
